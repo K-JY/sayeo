@@ -3,14 +3,24 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Market Status</title>
+  <title>Market Snapshot</title>
+  <style>
+    body { font-family: system-ui, sans-serif; padding: 16px; }
+    input, button { padding: 8px; font-size: 16px; }
+    .row { margin: 10px 0; }
+    pre { background:#f6f6f6; padding:12px; overflow:auto; }
+  </style>
 </head>
 <body>
-  <h1>시장 상태</h1>
+  <h1>기준일자 시장 스냅샷</h1>
 
-  <label>VIX 기준 (예: 20) <input id="vixTh" type="number" value="20" /></label>
-  <button id="btn">조회</button>
+  <div class="row">
+    <label>기준일자(YYYY-MM-DD): </label>
+    <input id="date" type="date" />
+    <button id="btn">조회</button>
+  </div>
 
+  <div class="row" id="summary"></div>
   <pre id="out">대기중...</pre>
 
   <script src="./app.js"></script>
