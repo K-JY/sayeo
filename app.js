@@ -1,4 +1,4 @@
-const WORKER_URL = "https://YOUR_WORKER_SUBDOMAIN.workers.dev/api/snapshot"; // 나중에 교체
+const WORKER_URL = "https://lively-voice-8492.herons5314.workers.dev/"; // 나중에 교체
 
 document.getElementById("btn").addEventListener("click", async () => {
   const vixTh = Number(document.getElementById("vixTh").value || 20);
