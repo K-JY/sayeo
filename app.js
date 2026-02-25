@@ -1,6 +1,6 @@
 // 네 Worker 주소로 바꿔줘!
 // 예: https://my-worker.my-subdomain.workers.dev/api/snapshot
-const WORKER_ENDPOINT = "/api/snapshot";
+const WORKER_ENDPOINT = "https://lively-voice-8492.herons5314.workers.dev/api/snapshot";
 
 const $date = document.getElementById("date");
 const $btn = document.getElementById("btn");
